@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "OnlyAmazonSell",
+    "version": "1.0",
+   
+    "description": "Display only Amazon sales and shipped items",
+    
+    "content_scripts": [
+      {
+        "matches": ["*://*.amazon.co.jp/*"],
+        "js": ["urlChange.js"]
+      }
+    ]
+  
+  }
